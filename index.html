@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Журавлик Пожеланий</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Comfortaa:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Подключаем 3D-библиотеку Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- 3D Холст для журавлика и частиц -->
+    <canvas id="canvas3d"></canvas>
+
+    <!-- Круглая кнопка музыки только с иконкой ноты -->
+    <button class="music-btn" id="musicToggleBtn" title="Включить / Выключить музыку">
+        🎵
+    </button>
+
+    <!-- Заголовок страницы -->
+    <header class="header-container">
+        <div class="title-badge">✦ Тапни по журавлику ✦</div>
+        <h1 id="craneTitle">Журавлик, несущий хорошее настроение</h1>
+    </header>
+
+    <!-- Выплывающее пожелание -->
+    <main class="wish-card" id="wishCard">
+        <div class="card-sparkle">✨</div>
+        <div class="wish-number" id="wishStep">Пожелание №1</div>
+        <p class="wish-text" id="wishText">Нажмите на 3D-журавлика, чтобы получить свое первое пожелание!</p>
+        <button class="next-btn" id="nextWishBtn">Следующее пожелание 🌸</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
